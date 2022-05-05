@@ -1,17 +1,19 @@
 import React from 'react';
+import git from '../../assets/git/git.png'
+import linkin from '../../assets/linkin/linkin.png';
 
-function About() {
+function Footer () {
+
   return (
-    <section className="my-5">
-      <h1 id="about"></h1>
-      {/* <img src={coverImage} className="my-2" style={{ width: "100%" }} alt="cover" /> */}
-      <div className="my-2">
-        <p>
-         
-        </p>
-      </div>
-    </section>
+      <footer>
+          <a href="https://github.com/Evidal19" rel="noopener noreferrer" target="_blank">
+              <img className="git" src={git} alt=""/>
+          </a>
+          <a href="https://www.linkedin.com/in/elisa-vidal-478067225/" rel="noopener noreferrer" target="_blank">
+              <img className="linkin" src={linkin} alt=""/>
+          </a>
+      </footer>
   );
 }
 
-export default About;
+export default Footer;
